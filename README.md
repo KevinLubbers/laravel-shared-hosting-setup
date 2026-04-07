@@ -20,7 +20,7 @@ Before starting, ensure your shared hosting account provides:
 - SSH access
 - Git installed
 - PHP 8.x (or compatible Laravel version)
-- Composer (optional, see deployment method)
+- Composer 
 - Cron job capability
 
 ---
@@ -29,11 +29,15 @@ Before starting, ensure your shared hosting account provides:
 
 ### 1. Upload Laravel Project
 
-[!WARNING]
-You must place your Laravel project OUTSIDE of the public_html folder
-Failure to do so will give public access to ALL of the credentials in your .env file
+ [!CAUTION]
+ You must place your Laravel project OUTSIDE of the public_html folder.
+ Failure to do so will give public access to ALL of the credentials in your .env file.
+ We should only store things we WANT our users to see in public_html (ie. logos, UI images, index.html, build files, and any other public storage).
 
-- Clone your Laravel project locally  
+ [!WARNING]
+ Many guides ignore this fact and introduce a huge security issue to your website
+
+- Clone your Laravel project 
 OR
 - Upload it to your shared hosting account via FTP
 
@@ -41,6 +45,6 @@ OR
 
 ### 2. Set Up the Deployment Script
 
-1. Place the files named `auto_deploy.sh` and `auto_deploy.log` outside of the public_html folder
+1. The files named `auto_deploy.sh` and `auto_deploy.log` outside of the public_html folder
 
 More to come soon
