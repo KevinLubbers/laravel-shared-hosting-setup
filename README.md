@@ -29,13 +29,13 @@ Before starting, ensure your shared hosting account provides:
 
 ### 1. Upload Laravel Project
 
- [!CAUTION]
- You must place your Laravel project OUTSIDE of the public_html folder.
- Failure to do so will give public access to ALL of the credentials in your .env file.
- We should only store things we WANT our users to see in public_html (ie. logos, UI images, index.html, build files, and any other public storage).
+[!CAUTION]
+You must place your Laravel project OUTSIDE of the public_html folder.
+Failure to do so will give public access to ALL of the credentials in your .env file.
+We should only store things we WANT our users to see in public_html (ie. logos, UI images, index.html, build files, and any other public storage).
 
- [!WARNING]
- Many guides ignore this fact and introduce a huge security issue to your website
+[!WARNING]
+Many guides ignore this fact and introduce a huge security issue to your website
 
 - Clone your Laravel project 
 OR
